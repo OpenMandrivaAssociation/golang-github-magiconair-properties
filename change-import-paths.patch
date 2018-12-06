@@ -1,0 +1,39 @@
+From 873166717f0839e25690f8baad41b0546b3f8f39 Mon Sep 17 00:00:00 2001
+From: Jan Chaloupka <jchaloup@redhat.com>
+Date: Wed, 18 Jan 2017 07:25:29 +0100
+Subject: [PATCH] change import paths
+
+---
+ load_test.go       | 2 +-
+ properties_test.go | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/load_test.go b/load_test.go
+index 23378ea..05081e3 100644
+--- a/load_test.go
++++ b/load_test.go
+@@ -12,7 +12,7 @@ import (
+ 	"os"
+ 	"strings"
+ 
+-	. "github.com/magiconair/properties/_third_party/gopkg.in/check.v1"
++	. "gopkg.in/check.v1"
+ )
+ 
+ type LoadSuite struct {
+diff --git a/properties_test.go b/properties_test.go
+index 0d61be0..3ff12ab 100644
+--- a/properties_test.go
++++ b/properties_test.go
+@@ -14,7 +14,7 @@ import (
+ 	"testing"
+ 	"time"
+ 
+-	. "github.com/magiconair/properties/_third_party/gopkg.in/check.v1"
++	. "gopkg.in/check.v1"
+ )
+ 
+ func Test(t *testing.T) { TestingT(t) }
+-- 
+2.7.4
+
